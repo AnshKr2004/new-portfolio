@@ -212,8 +212,8 @@ export const projects: Project[] = [
       "Personal Portfolio — A premium, animated developer portfolio showcasing projects, skills, and experience.",
     longDescription:
       "A meticulously crafted personal portfolio website built with Next.js 15 and React 19. Features buttery-smooth scroll animations powered by Framer Motion, a responsive dark-mode-first design, dynamic project showcases, and an interactive contact form with data persistence. Designed to leave a lasting impression on recruiters and clients alike.",
-    liveUrl: "",
-    githubUrl: "",
+    liveUrl: "https://new-portfolio-gamma-seven-79.vercel.app",
+    githubUrl: "https://github.com/AnshKr2004/new-portfolio",
     technologies: [
       "Next.js 15",
       "React 19",
