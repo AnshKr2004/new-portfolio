@@ -178,6 +178,7 @@ export default function Contact() {
                   onChange={(e) => updateForm({ name: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-background/50 border border-glass-border text-foreground placeholder:text-text-secondary/50 focus:outline-none focus:border-accent/50 transition-colors"
                   placeholder="Your name"
+                  suppressHydrationWarning
                 />
               </div>
               <div>
@@ -195,6 +196,7 @@ export default function Contact() {
                   onChange={(e) => updateForm({ email: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-background/50 border border-glass-border text-foreground placeholder:text-text-secondary/50 focus:outline-none focus:border-accent/50 transition-colors"
                   placeholder="your@email.com"
+                  suppressHydrationWarning
                 />
               </div>
               <div>
@@ -212,6 +214,7 @@ export default function Contact() {
                   onChange={(e) => updateForm({ message: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-background/50 border border-glass-border text-foreground placeholder:text-text-secondary/50 focus:outline-none focus:border-accent/50 transition-colors resize-none"
                   placeholder="Tell me about your project..."
+                  suppressHydrationWarning
                 />
               </div>
               <motion.button
@@ -224,6 +227,7 @@ export default function Contact() {
                     ? "opacity-70 cursor-not-allowed gradient-btn"
                     : "gradient-btn"
                 }`}
+                suppressHydrationWarning
               >
                 {status === "loading" && "Sending..."}
                 {status === "success" && "✓ Message Sent!"}
